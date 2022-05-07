@@ -17,11 +17,12 @@
    
   }
   
-  .info {
+  .contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    border-color: aqua;
   }
   .saludo {
     font-size: 30px;
@@ -72,12 +73,13 @@
     max-width: 100%;
     margin-top: 20px;
   }
+
   
   @media screen and (min-width: 1100px) {
     header {
       display: flex;
       width: 100%;
-     box-shadow: 3px 3px 10px #ad8bad, -3px -3px 10px hsl(0, 0%, 100%);
+      box-shadow: 3px 3px 10px #ad8bad, -3px -3px 10px hsl(0, 0%, 100%);
       position: fixed;
       top: 0;
       transition: 0.4s;
@@ -143,8 +145,144 @@
       max-width: 500px;
       margin: 50px;
     }
+    .conocimientos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0px;
+      padding: 90px 20px;
+    }
     
+    .mis-conocimientos {
+      max-width: 400px;
+      padding: 10px;
+    }
+    .titulo {
+      color: rgb(237, 184, 228);
+      text-align: center;
+      font-size: 42px;
+      font-weight: bolder;
+      margin: 20px 0px;
+    }
+    
+    .lorem {
+     
+      color: #884d80;
+      text-align: center;
+      margin: 30px 0px;
+    }
+    
+    .mosaico-de-conocimiento {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: white;
+      grid-column-gap: 50px;
+      grid-row-gap: 50px;
+      padding: 10px;
+    }
+   
+    .caja {
+      
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      border-radius: 5mm;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    
+    }
+  
 
+    .caja:hover {
+      box-shadow: 0px 0px 10px 1px #cccbcf;
+    }
+    
+    .caja .some {
+      padding: 10px;
+      margin: 15px 25px;
+    }
+    
+    .colored {
+      font-size: 3.3em;
+    }
+    
+    .skill-title {
+      font-weight: 500;
+      font-weight: bolder;
+      color: rgb(119, 98, 129);
+      margin: 5px 0px;
+    }
+    .skill-title:hover {
+      color: #ffffff;
+      text-shadow: 0px 0px 5px rgba(17, 19, 19, 0.68);
+    }
+  
 
+    @media screen and (min-width: 350px) {
+      .mosaico-de-conocimientos {
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    
+    
+    
+    
+    @media screen and (min-width: 780px) {
+      .mosaico-de-conocimientos {
+         /* max-width: 270px; */
+         display: block;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+      .caja {
+        display: flex;
+        max-width: 240px;
+        padding: 20px;
+        flex-direction:unset;
+        margin-top: 5px;
+        width: 250px;
+      }
+      
 
+    
+    
+    .seccion_cita {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 0px;
+    }
+    
+    .fa-quote-right {
+      font-size: 80px;
+      color: rgb(237, 184, 228);
+      text-align: center;
+      margin: 20px;
+    }
+    
+    .quote {
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      color: rgb(237, 184, 228);
+      width: 80%;
+    }
+    
+    .someone {
+      margin: 5%;
+      text-align: center;
+      color: rgb(237, 184, 228);
+    }
+    
+    }
+  }
 }
