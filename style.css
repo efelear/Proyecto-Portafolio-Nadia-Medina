@@ -34,10 +34,8 @@
   
   .mi-nombre {
     color: #b533d8;
-    
     font-size: 34px;
     font-weight: bolder;
-  
     margin: 10px 0px;
   }
   
@@ -285,4 +283,319 @@
     
     }
   }
+}
+.seccion_proyectos {
+  width: 100%;
+  padding: 90px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grilla-de-proyectos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.caja_proyecto {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #a3a0a0;
+  box-shadow: 0px 0px 10px 1px #c1b1db;
+  margin: 10px 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.caja_proyecto:hover {
+  box-shadow: 0px 0px 10px 1px #2b184d;
+}
+
+.imagen_proyecto {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.nombre_de_proyecto {
+  margin: 20px 0px;
+  font-size: 16px;
+}
+
+.nombre_de_proyecto:hover {
+  color: rgb(237, 184, 228);
+}
+
+@media screen and (min-width: 550px) {
+  
+  .caja_proyecto {
+    max-width:250px;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  
+
+  .caja_proyecto {
+    width: 320px;
+    width: calc(100% / 2 - (0.65em * 2));
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .grilla-de-proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 950px;
+  }
+  .caja_proyecto {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  
+  .caja_proyecto {
+    width: 340px;
+  }
+}
+
+.seccion-cominucacion{
+  padding: 90px 16px;
+}
+
+.contactame {
+  color: rgb(237, 184, 228);
+  text-align: start;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 20px 10px;
+}
+
+.mis_redes {
+  color: rgb(237, 184, 228);
+  text-align: start;
+  margin: 30px 10px;
+}
+
+.lista-de-redes {
+  margin: 30px 0px;
+  list-style: none;
+  line-height: 1;
+}
+.icono {
+  color: rgb(237, 184, 228);
+  background-color: #fff;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  text-align: center;
+  
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  align-items:center;
+  margin: 5px;
+  padding: 9px 3px;
+  border-radius: 100px;
+}
+
+.link:hover {
+  color: rgb(237, 184, 228);
+  background-color: rgb(255, 255, 255);
+}
+
+.link:hover .icono {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #b859ab;
+}
+
+.link:focus {
+  background-color: #fafafa;
+  box-shadow: 0px 0px 1px 0px #b18df5;
+}
+
+
+.seccion-escribir{
+  padding: 0px;
+}
+
+.formulario {
+  width: 100%;
+}
+
+.Escribime {
+  color: rgb(237, 184, 228);
+  text-align: start;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 20px 10px;
+}
+
+.form-control {
+  margin-bottom: 55px;
+  flex-grow: 1;
+  position: relative;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  margin-top: 5px;
+}
+input,
+textarea {
+ 
+  border: 0;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid rgb(237, 184, 228);
+  padding: 8px 15px;
+  width: 100%;
+  outline: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  box-shadow: 0px 0px 7px rgb(237, 184, 228);
+  outline: 0;
+}
+
+button {
+  border: 0;
+  background-color: rgb(237, 184, 228);
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding: 10px 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input:valid:focus,
+textarea:valid:focus {
+  box-shadow: 0px 0px 5px #72c6cc;
+}
+
+input:invalid:not(:placeholder-shown):focus,
+textarea:invalid:not(:placeholder-shown):focus {
+  box-shadow: 0px 0px 5px #db303f;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid #db303f;
+}
+
+input:valid,
+textarea:valid {
+  border: 1px solid rgb(237, 184, 228);
+}
+
+.icon-invalid, 
+.icon-valid {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transform: translateY(50%);
+}
+
+
+.icon-valid {
+  color: #56c9d1;
+}
+
+.icon-invalid {
+  color: #db303f;
+}
+
+input:valid ~ .icon-valid,
+textarea:valid ~ .icon-valid,
+input:not(:placeholder-shown):invalid ~ .icon-invalid,
+textarea:not(:placeholder-shown):invalid ~ .icon-invalid {
+  display: block;
+
+}
+
+@media (min-width: 500px) {
+  .mis_redes {
+    max-width: 350px;
+  }
+  .lista-de-redes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .li-red {
+    display: flex;
+    width: 50%;
+  }
+  .nombre-apellido{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .form-control{
+    padding: 10px;
+    margin: 0px;
+  }
+
+
+@media (min-width: 900px) {
+
+  .lista-de-redes {
+    display: flex;
+   flex-direction: column;
+  }
+  .li-red {
+    display: flex;
+    width: 100%;
+  }
+  
+  .contacto{
+    padding: 130px 80px;
+  }
+  
+  .nombre-apellido{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .form-control{
+    padding: 10px;
+    margin: 0px;
+  }
+  .seccion-cominucacion{
+    display:flex ;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(246, 246, 255);
+  }
+
+  .seccion-contacto{
+     width: 50%;
+     display: block;
+  
+  }
+  .seccion-escribir{
+    width: 50%;
+    display: block;
+     
+  }
+}
 }
