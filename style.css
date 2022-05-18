@@ -36,7 +36,7 @@
     color: #b533d8;
     font-size: 34px;
     font-weight: bolder;
-  margin: 10px 0px;
+    margin: 10px 0px;
   }
   
   .descripcion {
@@ -507,33 +507,6 @@ input:valid,
 textarea:valid {
   border: 1px solid rgb(237, 184, 228);
 }
-
-.icon-invalid, 
-.icon-valid {
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  transform: translateY(50%);
-}
-
-
-.icon-valid {
-  color: #56c9d1;
-}
-
-.icon-invalid {
-  color: #db303f;
-}
-
-input:valid ~ .icon-valid,
-textarea:valid ~ .icon-valid,
-input:not(:placeholder-shown):invalid ~ .icon-invalid,
-textarea:not(:placeholder-shown):invalid ~ .icon-invalid {
-  display: block;
-
-}
-
 @media (min-width: 500px) {
   .mis_redes {
     max-width: 350px;
